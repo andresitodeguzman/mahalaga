@@ -25,7 +25,7 @@ if(isset($_REQUEST['url'])){
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/css/materialize.min.css">
         <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
-        <meta property="og:image" content="http://andresitodeguzman.com/mahalaga">
+        <meta property="og:image" content="http://andresitodeguzman.com/mahalaga/mahalaga.PNG">
         <meta property="og:description" content="See all meta information in a URL">
         <style>
         .btn-large {
@@ -44,6 +44,7 @@ if(isset($_REQUEST['url'])){
                 <style>
                 .teal {
                     background-color: $themeColor !important;
+                    overflow: auto;
                 }
                 </style>
                 ";
@@ -63,7 +64,7 @@ if(isset($_REQUEST['url'])){
                             <label for="url">Url</label> 
                         </div>
                         <div class="input-field col s3">
-                            <button type="submit" class="btn btn-large teal waves-effect waves-light">Submit</button>
+                            <button type="submit" class="btn btn-medium teal waves-effect waves-light">Submit</button>
                         </div>
                         </form>
                     </div>
@@ -75,9 +76,9 @@ if(isset($_REQUEST['url'])){
                     include("render.php");
                 }
             ?><br><br>
-            <p class="grey-text">
+            <p><center class="grey-text">
                 Andresito de Guzman<br>
-                <a href="http://github.com/andresitodeguzman/mahalaga">GitHub</a>
+                <a href="http://github.com/andresitodeguzman/mahalaga">GitHub</a></center>
             </p>
             <br><br><br>
         </div>

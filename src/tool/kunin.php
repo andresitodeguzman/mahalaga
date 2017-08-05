@@ -26,7 +26,7 @@ class kunin{
         // Handles Parameter
         $this->url = $url;
         // Checks if Url is empty
-        if(!$this->url) echo "Empty Url";
+        if(!$this->url) $url = "http://google.com";
         // Creates DomDocument Object
         $this->site = new DomDocument('1.0', 'UTF-8');
         // Silence too much errors
