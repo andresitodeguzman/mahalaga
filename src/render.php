@@ -21,7 +21,15 @@
                 </tr>
                 <tr>
                     <td>Viewport</td>
-                    <td><?=$site->value("viewport")?></td>
+                    <td><?php
+                        $vp = $site->value("viewport");
+                        if(!empty($vp)) $nvp = explode(",",$vp);
+                        if(!empty($nvp)){
+                            foreach($nvp as $val){
+                                echo $val;
+                            }
+                        }
+                    ?></td>
                 </tr>
             </tbody>
         </table>
